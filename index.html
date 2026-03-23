@@ -89,7 +89,50 @@
         padding: 20px;
         border-radius: 10px;
     }
+.faq-item {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #020617;
+}
 
+.faq-item input {
+    display: none;
+}
+
+.faq-item label {
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+}
+
+.faq-item label span {
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.faq-item input:checked ~ .faq-content {
+    max-height: 200px;
+    padding: 15px;
+}
+
+.faq-item label span::before {
+    content: "+";
+}
+
+.faq-item input:checked + label span::before {
+    content: "-";
+}
     footer {
         text-align: center;
         padding: 20px;
@@ -103,7 +146,60 @@
         }
     }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
 
+    {
+      "@type": "Question",
+      "name": "Is StarHela Agencies legit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "StarHela Agencies provides online earning opportunities such as paid tasks, surveys, and affiliate marketing. Your success depends on your effort, consistency, and how you use the platform."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "How much can I earn daily?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your daily earnings vary depending on the tasks you complete. Active users combining surveys, referrals, and tasks can earn consistently over time."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "How do I withdraw my money?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can withdraw your earnings once you reach the minimum payout threshold. Payments are processed via M-Pesa and other available options."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Do I need experience to start?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No experience is required. StarHela is beginner-friendly, and anyone with a smartphone or computer can start earning."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "How can I increase my earnings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can increase your income by staying active daily, completing multiple tasks, and promoting your referral link to earn commissions."
+      }
+    }
+
+  ]
+}
+</script>
 </head>
 <body><header>
     <h1>StarHela Agencies</h1>
@@ -252,10 +348,53 @@
             <h3>5. Withdraw Earnings</h3>
             <p>Withdraw your money easily via M-Pesa once you reach the minimum payout.</p>
         </div>
+    </div>
+            </section><section id="faq" style="padding:40px 20px; max-width:900px; margin:auto;">
 
+    <h2 style="margin-bottom:20px;">Frequently Asked Questions (FAQs)</h2>
+    <p style="margin-bottom:20px;">Find answers to common questions about StarHela Agencies and how to start earning online.</p>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq1">
+        <label for="faq1">Is StarHela Agencies legit? <span>+</span></label>
+        <div class="faq-content">
+            <p>StarHela Agencies provides online earning opportunities such as paid tasks, surveys, and affiliate marketing. Your success depends on your effort, consistency, and how you use the platform.</p>
+        </div>
     </div>
 
-            </section><footer>
+    <div class="faq-item">
+        <input type="checkbox" id="faq2">
+        <label for="faq2">How much can I earn daily? <span>+</span></label>
+        <div class="faq-content">
+            <p>Your daily earnings vary depending on the tasks you complete. Active users combining surveys, referrals, and tasks can earn consistently over time.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq3">
+        <label for="faq3">How do I withdraw my money? <span>+</span></label>
+        <div class="faq-content">
+            <p>You can withdraw your earnings once you reach the minimum payout threshold. Payments are processed via M-Pesa and other available options.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq4">
+        <label for="faq4">Do I need experience to start? <span>+</span></label>
+        <div class="faq-content">
+            <p>No experience is required. StarHela is beginner-friendly, and anyone with a smartphone or computer can start earning.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq5">
+        <label for="faq5">How can I increase my earnings? <span>+</span></label>
+        <div class="faq-content">
+            <p>You can increase your income by staying active daily, completing multiple tasks, and promoting your referral link to earn commissions.</p>
+        </div>
+    </div>
+
+    </section> <footer>
     <p>© 2026 StarHela Agencies | All Rights Reserved</p>
 </footer></body>
 </html>
