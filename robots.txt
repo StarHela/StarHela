@@ -1,0 +1,8 @@
+# robots.txt for StarHela Agencies
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Disallow:
+
+# Sitemap location
+Sitemap: https://starhela.github.io/StarHela/sitemap.xml
